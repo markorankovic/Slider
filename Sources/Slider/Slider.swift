@@ -8,7 +8,7 @@ extension CGPoint {
     
 }
 
-class Slider: SKNode {
+public class Slider: SKNode {
         
     let region = SKShapeNode(rectOf: CGSize(width: 100, height: 10))
     
@@ -28,7 +28,7 @@ class Slider: SKNode {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let scene = scene else { return }
         let dx = (touches.first!.location(in: scene) - touches.first!.previousLocation(in: scene)).x
         if touches.first!.location(in: scene).x > region.position.x + region.frame.width/2 {
