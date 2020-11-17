@@ -10,9 +10,9 @@ extension CGPoint {
 
 public class Slider: SKNode {
         
-    let region = SKShapeNode(rectOf: CGSize(width: 100, height: 10))
+    let region = SKShapeNode(rectOf: CGSize(width: 400, height: 50))
     
-    let button = SKShapeNode(rectOf: CGSize(width: 10, height: 10))
+    let button = SKShapeNode(rectOf: CGSize(width: 60, height: 60))
     
     @objc public var currentValue: CGFloat = 0 {
         willSet {
