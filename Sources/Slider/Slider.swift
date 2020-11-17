@@ -18,7 +18,7 @@ public class Slider: SKNode {
     
     private var maxValue: CGFloat = 100
     
-    override init() {
+    public override init() {
         super.init()
         addChild(region)
         addChild(button)
