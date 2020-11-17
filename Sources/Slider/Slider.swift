@@ -14,7 +14,11 @@ public class Slider: SKNode {
     
     let button = SKShapeNode(rectOf: CGSize(width: 10, height: 10))
     
-    var currentValue: CGFloat = 0
+    public var currentValue: CGFloat = 0 {
+        willSet {
+            
+        }
+    }
     
     private var maxValue: CGFloat = 100
     
