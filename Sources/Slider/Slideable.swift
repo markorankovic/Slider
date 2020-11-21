@@ -1,4 +1,4 @@
-protocol Slideable {
+public protocol Slideable {
 
     associatedtype T
     
